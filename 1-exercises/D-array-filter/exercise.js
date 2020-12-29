@@ -7,11 +7,16 @@
 */
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
-
-var pairsByIndex; // Complete this statement
+ // Complete this statement
+var pairsByIndex = pairsByIndexRaw.filter(arr => {
+  return arr !== null && arr.length === 2});
+  console.log(pairsByIndex);
+  
+ 
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
-var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
+const newLocal = "Mozafar";
+var mentors = ["Daniel", "Irina", newLocal, "Luke"];
 
 var pairs = pairsByIndex.map(function (indexes) {
   var student = students[indexes[0]];
