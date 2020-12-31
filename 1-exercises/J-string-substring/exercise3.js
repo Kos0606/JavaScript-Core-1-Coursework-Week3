@@ -8,7 +8,7 @@
 
 let statement = "I do not like programming";
 
-let result = "";
+let result = statement.replace(statement.substring(5, 8), "");
 
 console.log(result);
 
