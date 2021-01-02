@@ -15,7 +15,11 @@
   
 */
 
-function colonisers() {}
+function colonisers(lastNameStartWithA) {
+  let listOfNames = lastNameStartWithA.filter(el => el.substring(0, 1) === "A" && el.includes("family"));
+  return listOfNames;
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
